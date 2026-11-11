@@ -2,533 +2,381 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080d18">
 
-  <title>RayNeo GT Max | Votre cinéma personnel</title>
-  <meta name="description" content="Découvrez les lunettes AR RayNeo GT Max : écran virtuel 267 pouces, Micro-OLED Full HD, 120 Hz et suivi spatial 3DoF.">
+<title>RayNeo GT Max | Le cinéma change de dimension</title>
+<meta name="description" content="Découvrez les lunettes RayNeo GT Max : Micro-OLED Full HD, écran virtuel jusqu'à 267 pouces, 120 Hz et suivi spatial 3DoF.">
 
-  <meta property="og:title" content="RayNeo GT Max – Le cinéma change de dimension">
-  <meta property="og:description" content="Découvrez une nouvelle expérience de divertissement immersif.">
-  <meta property="og:image" content="images/rayneo-gt-max.jpg">
-  <meta property="og:type" content="website">
+<meta property="og:title" content="RayNeo GT Max - Votre cinéma personnel">
+<meta property="og:description" content="Découvrez une nouvelle expérience de divertissement immersif.">
 
-  <meta name="theme-color" content="#080d18">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+font-family:Arial,sans-serif;
+background:#080d18;
+color:#fff;
+line-height:1.6
+}
+a{text-decoration:none}
+.container{width:90%;max-width:1100px;margin:auto}
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+header{
+padding:22px 0;
+border-bottom:1px solid #24334b
+}
+.logo{
+font-size:22px;
+font-weight:900;
+letter-spacing:2px
+}
+.logo span{color:#48baff}
 
-    html {
-      scroll-behavior: smooth;
-    }
+.hero{
+text-align:center;
+padding:75px 0;
+background:radial-gradient(ellipse at 50% 30%,#173d68,#080d18 70%)
+}
+.tag{
+display:inline-block;
+border:1px solid #3989bd;
+border-radius:30px;
+padding:7px 17px;
+font-size:12px;
+letter-spacing:2px;
+color:#65caff;
+margin-bottom:25px
+}
+h1{
+font-size:clamp(38px,7vw,70px);
+line-height:1.1;
+margin-bottom:22px
+}
+h1 span{color:#49baff}
+.intro{
+max-width:680px;
+margin:0 auto 28px;
+color:#bac8db;
+font-size:18px
+}
+.product{
+width:100%;
+max-width:620px;
+height:340px;
+object-fit:contain;
+margin:20px auto 30px;
+display:block;
+border-radius:15px
+}
+.cta{
+display:inline-block;
+background:linear-gradient(100deg,#40b4ff,#7ce5ff);
+color:#07101b;
+padding:16px 27px;
+border-radius:9px;
+font-weight:900;
+transition:.2s
+}
+.cta:hover{transform:translateY(-3px)}
+.disclosure{
+color:#91a0b5;
+font-size:11px;
+margin-top:17px
+}
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #080d18;
-      color: #f5f7ff;
-      line-height: 1.6;
-    }
+.section{padding:75px 0}
+.section h2{
+font-size:clamp(28px,4vw,40px);
+text-align:center;
+margin-bottom:15px
+}
+.subtitle{
+color:#aebed2;
+text-align:center;
+margin-bottom:40px
+}
+.features{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px
+}
+.feature{
+background:#111c2d;
+border:1px solid #263b57;
+border-radius:14px;
+padding:26px 20px;
+text-align:center
+}
+.feature .icon{font-size:32px}
+.feature h3{color:#54c1ff;margin:12px 0}
+.feature p{color:#b2c0d2;font-size:14px}
 
-    a {
-      text-decoration: none;
-    }
+.dark{background:#0e1829}
+.center{text-align:center;max-width:760px;margin:auto}
+.center p{color:#b5c4d8;margin:20px 0}
 
-    .container {
-      width: min(1100px, 90%);
-      margin: auto;
-    }
+.specs{
+max-width:760px;
+margin:auto;
+background:#111c2d;
+border:1px solid #263b57;
+border-radius:14px;
+overflow:hidden
+}
+.spec{
+display:flex;
+justify-content:space-between;
+gap:15px;
+padding:15px 20px;
+border-bottom:1px solid #263b57
+}
+.spec:last-child{border:0}
+.spec span:first-child{color:#a9bad0}
+.spec span:last-child{text-align:right;font-weight:bold}
 
-    header {
-      padding: 22px 0;
-      border-bottom: 1px solid #202b40;
-    }
+.faq{
+max-width:760px;
+margin:auto
+}
+details{
+background:#111c2d;
+padding:19px;
+border-radius:10px;
+margin-bottom:12px;
+border:1px solid #263b57
+}
+summary{
+cursor:pointer;
+font-weight:bold;
+color:#62c6ff
+}
+details p{color:#b5c3d7;margin-top:12px;font-size:14px}
 
-    .logo {
-      font-size: 21px;
-      font-weight: 800;
-      letter-spacing: 2px;
-    }
+.final{
+text-align:center;
+padding:85px 0;
+background:radial-gradient(ellipse,#173c67,#080d18 70%)
+}
+.final p{color:#b7c6d9;margin:20px auto 30px}
 
-    .logo span {
-      color: #46b9ff;
-    }
+footer{
+padding:30px 15px;
+text-align:center;
+border-top:1px solid #26334a;
+color:#8998ae;
+font-size:12px
+}
+footer p{margin:8px}
 
-    .hero {
-      padding: 75px 0 85px;
-      text-align: center;
-      background:
-        radial-gradient(ellipse at 50% 30%, #16345c 0%, #080d18 68%);
-    }
-
-    .tag {
-      display: inline-block;
-      color: #62c5ff;
-      border: 1px solid #28618b;
-      border-radius: 30px;
-      padding: 7px 16px;
-      font-size: 12px;
-      letter-spacing: 2px;
-      margin-bottom: 24px;
-    }
-
-    h1 {
-      font-size: clamp(36px, 6vw, 68px);
-      line-height: 1.1;
-      margin-bottom: 22px;
-      letter-spacing: -2px;
-    }
-
-    h1 span {
-      color: #48baff;
-    }
-
-    .hero p {
-      color: #b5c3d8;
-      max-width: 650px;
-      margin: 0 auto 30px;
-      font-size: 18px;
-    }
-
-    .product-image {
-      display: block;
-      width: min(650px, 100%);
-      height: auto;
-      max-height: 390px;
-      object-fit: contain;
-      margin: 38px auto;
-      filter: drop-shadow(0 15px 35px #1677bc55);
-    }
-
-    .cta {
-      display: inline-block;
-      padding: 16px 30px;
-      border-radius: 9px;
-      color: #06101c;
-      background: linear-gradient(100deg, #46b9ff, #78e1ff);
-      font-weight: 800;
-      font-size: 16px;
-      transition: .25s;
-      box-shadow: 0 5px 30px #35aaff40;
-    }
-
-    .cta:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 35px #35aaff70;
-    }
-
-    .disclosure {
-      font-size: 11px;
-      color: #8998ae;
-      margin-top: 16px;
-    }
-
-    .section {
-      padding: 75px 0;
-    }
-
-    .section h2 {
-      font-size: clamp(27px, 4vw, 40px);
-      text-align: center;
-      margin-bottom: 16px;
-    }
-
-    .subtitle {
-      text-align: center;
-      color: #9daec4;
-      margin-bottom: 42px;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .feature {
-      background: #111c2d;
-      border: 1px solid #263750;
-      border-radius: 14px;
-      padding: 28px 22px;
-      text-align: center;
-    }
-
-    .feature .icon {
-      font-size: 32px;
-      margin-bottom: 15px;
-    }
-
-    .feature h3 {
-      color: #58c2ff;
-      margin-bottom: 10px;
-    }
-
-    .feature p {
-      color: #aebbd0;
-      font-size: 14px;
-    }
-
-    .experience {
-      background: #0e1727;
-    }
-
-    .experience-content {
-      max-width: 750px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .experience-content p {
-      color: #b4c2d7;
-      margin: 15px 0 25px;
-    }
-
-    .specs {
-      max-width: 750px;
-      margin: auto;
-      background: #111c2d;
-      border: 1px solid #263750;
-      border-radius: 14px;
-      overflow: hidden;
-    }
-
-    .spec {
-      display: flex;
-      justify-content: space-between;
-      gap: 15px;
-      padding: 17px 22px;
-      border-bottom: 1px solid #263750;
-    }
-
-    .spec:last-child {
-      border-bottom: none;
-    }
-
-    .spec span:first-child {
-      color: #9eafc5;
-    }
-
-    .spec span:last-child {
-      font-weight: bold;
-      text-align: right;
-    }
-
-    .compatibility {
-      max-width: 750px;
-      margin: 30px auto 0;
-      color: #aebbd0;
-      font-size: 14px;
-      background: #111c2d;
-      padding: 20px;
-      border-radius: 12px;
-    }
-
-    .final-cta {
-      text-align: center;
-      background:
-        radial-gradient(ellipse at center, #15345a, #080d18 70%);
-      padding: 85px 0;
-    }
-
-    .final-cta p {
-      color: #b5c3d8;
-      margin: 15px auto 28px;
-    }
-
-    footer {
-      text-align: center;
-      border-top: 1px solid #202b40;
-      padding: 30px 15px;
-      color: #8795aa;
-      font-size: 12px;
-    }
-
-    footer a {
-      color: #55bfff;
-    }
-
-    @media (max-width: 700px) {
-      .features {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding: 55px 0;
-      }
-
-      .section {
-        padding: 55px 0;
-      }
-
-      .spec {
-        padding: 15px;
-        font-size: 13px;
-      }
-
-      .cta {
-        width: 100%;
-        max-width: 340px;
-      }
-    }
-  </style>
+@media(max-width:700px){
+.features{grid-template-columns:1fr}
+.hero{padding:55px 0}
+.section{padding:55px 0}
+.product{height:260px}
+.cta{width:100%;max-width:340px}
+.spec{font-size:13px;padding:14px}
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <div class="container">
-    <div class="logo">TECH<span>VISION</span></div>
-  </div>
+<div class="container">
+<div class="logo">TECH<span>VISION</span></div>
+</div>
 </header>
 
 <main>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container">
+<section class="hero">
+<div class="container">
 
-      <div class="tag">NOUVELLE GÉNÉRATION AR / XR</div>
+<div class="tag">TECHNOLOGIE AR / XR</div>
 
-      <h1>
-        Votre cinéma.<br>
-        <span>Sans limites.</span>
-      </h1>
+<h1>Votre cinéma.<br><span>Sans limites.</span></h1>
 
-      <p>
-        Découvrez les RayNeo GT Max : des lunettes AR
-        conçues pour transformer vos moments de cinéma
-        et de gaming avec un écran virtuel immersif de 267 pouces.
-      </p>
+<p class="intro">
+Découvrez les RayNeo GT Max : des lunettes AR/XR
+qui transforment votre expérience de cinéma et de gaming
+avec un écran virtuel pouvant atteindre 267 pouces.
+</p>
 
-      <img
-        class="product-image"
-        src="images/rayneo-gt-max.jpg"
-        alt="Lunettes de réalité augmentée RayNeo GT Max"
-      >
+<img
+class="product"
+src="https://placehold.co/800x450/101b30/54c1ff?text=RAYNEO+GT+MAX"
+alt="Lunettes RayNeo GT Max"
+>
 
-      <a class="cta amazon-link" href="#acheter">
-        DÉCOUVRIR LES RAYNEO GT MAX →
-      </a>
+<a class="cta" href="#acheter">
+DÉCOUVRIR LES RAYNEO GT MAX →
+</a>
 
-      <div class="disclosure">
-        Liens affiliés Amazon : en tant que Partenaire Amazon,
-        je réalise un bénéfice sur les achats remplissant
-        les conditions requises.
-      </div>
+<p class="disclosure">
+En tant que Partenaire Amazon, je réalise un bénéfice
+sur les achats remplissant les conditions requises.
+</p>
 
-    </div>
-  </section>
+</div>
+</section>
 
-  <!-- BENEFICES -->
-  <section class="section">
-    <div class="container">
+<section class="section">
+<div class="container">
 
-      <h2>Une expérience visuelle immersive</h2>
+<h2>Une expérience visuelle immersive</h2>
+<p class="subtitle">Découvrez les technologies des RayNeo GT Max.</p>
 
-      <p class="subtitle">
-        La technologie au service de votre divertissement.
-      </p>
+<div class="features">
 
-      <div class="features">
+<div class="feature">
+<div class="icon">🎬</div>
+<h3>Écran virtuel 267"</h3>
+<p>Profitez d'un écran virtuel géant, avec plusieurs tailles d'affichage annoncées.</p>
+</div>
 
-        <article class="feature">
-          <div class="icon">🎬</div>
-          <h3>Écran virtuel 267"</h3>
-          <p>
-            Profitez d'un écran virtuel géant.
-            Trois tailles sont proposées :
-            227, 267 et 307 pouces.
-          </p>
-        </article>
+<div class="feature">
+<div class="icon">✨</div>
+<h3>Micro-OLED Full HD</h3>
+<p>Résolution 1920 × 1080 et fréquence allant jusqu'à 120 Hz en 2D.</p>
+</div>
 
-        <article class="feature">
-          <div class="icon">✨</div>
-          <h3>Micro-OLED Full HD</h3>
-          <p>
-            Une résolution de 1920 × 1080
-            avec une fréquence allant jusqu'à
-            120 Hz en 2D.
-          </p>
-        </article>
+<div class="feature">
+<div class="icon">🌌</div>
+<h3>Suivi spatial 3DoF</h3>
+<p>Choisissez comment votre écran virtuel se positionne dans l'espace.</p>
+</div>
 
-        <article class="feature">
-          <div class="icon">🌌</div>
-          <h3>Suivi spatial 3DoF</h3>
-          <p>
-            Trois modes d'affichage :
-            Follow, Steady et Pinned
-            pour adapter votre expérience.
-          </p>
-        </article>
+<div class="feature">
+<div class="icon">🎧</div>
+<h3>Audio immersif</h3>
+<p>Quatre haut-parleurs avec réglage Bang & Olufsen.</p>
+</div>
 
-        <article class="feature">
-          <div class="icon">🎧</div>
-          <h3>Audio immersif</h3>
-          <p>
-            Quatre haut-parleurs avec
-            réglage audio Bang & Olufsen
-            et son spatial.
-          </p>
-        </article>
+<div class="feature">
+<div class="icon">⚡</div>
+<h3>Champ de vision 59°</h3>
+<p>Un champ de vision conçu pour une expérience immersive.</p>
+</div>
 
-        <article class="feature">
-          <div class="icon">⚡</div>
-          <h3>Champ de vision 59°</h3>
-          <p>
-            Un champ de vision élargi
-            pour profiter d'une expérience
-            visuelle plus immersive.
-          </p>
-        </article>
+<div class="feature">
+<div class="icon">🎮</div>
+<h3>Cinéma et gaming</h3>
+<p>Profitez de vos contenus sur un grand écran virtuel avec un appareil compatible.</p>
+</div>
 
-        <article class="feature">
-          <div class="icon">🎮</div>
-          <h3>Films et gaming</h3>
-          <p>
-            Connectez un appareil compatible
-            pour profiter de vos contenus
-            et jeux sur grand écran virtuel.
-          </p>
-        </article>
+</div>
+</div>
+</section>
 
-      </div>
-    </div>
-  </section>
+<section class="section dark">
+<div class="container center">
 
-  <!-- EXPERIENCE -->
-  <section class="section experience">
-    <div class="container">
-      <div class="experience-content">
+<h2>Votre écran. Votre espace.</h2>
 
-        <h2>Un écran qui s'adapte à vos mouvements</h2>
+<p>
+Le suivi spatial 3DoF natif permet de choisir
+différents modes d'affichage : Follow, Steady
+et Pinned. Adaptez votre expérience à vos envies.
+</p>
 
-        <p>
-          Grâce au suivi spatial 3DoF natif,
-          choisissez le comportement de votre écran virtuel.
-          Fixez-le dans l'espace, laissez-le suivre votre regard
-          ou profitez d'un affichage stable.
-        </p>
+<a class="cta" href="#acheter">EXPLORER LE PRODUIT →</a>
 
-        <h3 style="color:#55bfff">
-          Trois modes. Une nouvelle façon de regarder.
-        </h3>
+</div>
+</section>
 
-      </div>
-    </div>
-  </section>
+<section class="section">
+<div class="container">
 
-  <!-- TECHNICAL SPECS -->
-  <section class="section">
-    <div class="container">
+<h2>Caractéristiques techniques</h2>
+<p class="subtitle">Les informations essentielles à connaître.</p>
 
-      <h2>Caractéristiques techniques</h2>
+<div class="specs">
 
-      <p class="subtitle">
-        L'essentiel de la technologie RayNeo GT Max.
-      </p>
+<div class="spec"><span>Écran</span><span>Micro-OLED 0,6"</span></div>
+<div class="spec"><span>Résolution</span><span>1920 × 1080</span></div>
+<div class="spec"><span>Fréquence 2D</span><span>120 Hz maximum</span></div>
+<div class="spec"><span>Fréquence 3D</span><span>60 Hz</span></div>
+<div class="spec"><span>Champ de vision</span><span>59°</span></div>
+<div class="spec"><span>Suivi spatial</span><span>3DoF natif</span></div>
+<div class="spec"><span>Poids</span><span>78 g</span></div>
+<div class="spec"><span>Audio</span><span>4 haut-parleurs</span></div>
 
-      <div class="specs">
+</div>
 
-        <div class="spec">
-          <span>Écran</span>
-          <span>Micro-OLED SeeYa 0,6"</span>
-        </div>
+</div>
+</section>
 
-        <div class="spec">
-          <span>Résolution</span>
-          <span>1920 × 1080</span>
-        </div>
+<section class="section dark">
+<div class="container faq">
 
-        <div class="spec">
-          <span>Fréquence 2D</span>
-          <span>120 Hz maximum</span>
-        </div>
+<h2>Questions fréquentes</h2>
+<p class="subtitle">Les réponses avant de découvrir le produit.</p>
 
-        <div class="spec">
-          <span>Fréquence 3D</span>
-          <span>60 Hz</span>
-        </div>
+<details>
+<summary>Les RayNeo GT Max sont-elles compatibles avec tous les smartphones ?</summary>
+<p>Non. L'appareil source doit prendre en charge une sortie vidéo DisplayPort sur USB-C. Vérifiez la compatibilité de votre appareil avant l'achat.</p>
+</details>
 
-        <div class="spec">
-          <span>Champ de vision</span>
-          <span>59°</span>
-        </div>
+<details>
+<summary>Peut-on regarder des films avec ces lunettes ?</summary>
+<p>Oui, avec une source vidéo compatible, elles permettent de profiter d'un grand écran virtuel pour vos contenus.</p>
+</details>
 
-        <div class="spec">
-          <span>Suivi spatial</span>
-          <span>3DoF natif</span>
-        </div>
+<details>
+<summary>Quelle est la fréquence de rafraîchissement ?</summary>
+<p>Jusqu'à 120 Hz en 2D et 60 Hz en 3D, selon le mode utilisé.</p>
+</details>
 
-        <div class="spec">
-          <span>Poids</span>
-          <span>78 g</span>
-        </div>
+<details>
+<summary>Quel est le prix des lunettes ?</summary>
+<p>Le prix et la disponibilité peuvent varier. Consultez la fiche Amazon pour connaître les informations actualisées.</p>
+</details>
 
-        <div class="spec">
-          <span>Audio</span>
-          <span>4 haut-parleurs</span>
-        </div>
+</div>
+</section>
 
-      </div>
+<section class="final" id="acheter">
+<div class="container">
 
-      <div class="compatibility">
-        <strong>À vérifier avant l'achat :</strong>
-        la connexion USB-C directe nécessite un appareil
-        compatible avec la sortie vidéo DisplayPort.
-        La compatibilité varie selon les appareils.
-        Un adaptateur peut être nécessaire pour certaines sources HDMI.
-      </div>
+<h2>Prêt à changer votre façon de regarder ?</h2>
 
-    </div>
-  </section>
+<p>
+Découvrez les RayNeo GT Max et consultez
+leur prix et leur disponibilité sur Amazon.
+</p>
 
-  <!-- CTA FINAL -->
-  <section class="final-cta" id="acheter">
-    <div class="container">
+<a
+class="cta"
+href="https://www.amazon.fr/s?k=RayNeo+GT+Max&tag=smartmonkeydi-21"
+target="_blank"
+rel="nofollow sponsored noopener"
+>
+VOIR LES RAYNEO GT MAX SUR AMAZON →
+</a>
 
-      <h2>Prêt à découvrir une nouvelle dimension ?</h2>
+<p class="disclosure">
+Prix et disponibilité susceptibles de changer.
+</p>
 
-      <p>
-        Découvrez les lunettes RayNeo GT Max
-        et consultez leur disponibilité sur Amazon.
-      </p>
-
-      <a
-        class="cta amazon-link"
-        href="https://www.amazon.fr/"
-        target="_blank"
-        rel="nofollow sponsored noopener"
-      >
-        VOIR SUR AMAZON →
-      </a>
-
-      <div class="disclosure">
-        Le prix et la disponibilité sont susceptibles de changer.
-      </div>
-
-    </div>
-  </section>
+</div>
+</section>
 
 </main>
 
 <footer>
-  <p>
-    © 2026 TECHVISION – Tous droits réservés.
-  </p>
-
-  <p>
-    En tant que Partenaire Amazon, je réalise un bénéfice
-    sur les achats remplissant les conditions requises.
-  </p>
-
-  <p style="margin-top:12px">
-    RayNeo est une marque appartenant à son propriétaire respectif.
-    Ce site est indépendant et non affilié officiellement à RayNeo.
-  </p>
+<p>© 2026 TECHVISION</p>
+<p>
+En tant que Partenaire Amazon, je réalise un bénéfice
+sur les achats remplissant les conditions requises.
+</p>
+<p>
+Site indépendant, non affilié officiellement à RayNeo.
+</p>
 </footer>
 
 </body>
 </html>
+
